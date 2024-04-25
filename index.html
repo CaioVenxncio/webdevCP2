@@ -5,8 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta name="description" content="Site oficial da vinheira Agnello, responsável pelos melhores vinhos pelo melhor preço e atendimento">
     <meta name="keywords" content="Vinhos, Agnello, Vinheira, Sommeliers">
-    <title>Vinheira Agnello - seu vinho aqui!</title>
     <link rel="stylesheet" href="estilos/style.css">
+    <title>Vinheira Agnello - seu vinho aqui!</title>
+    
 </head>
 <body>
     <header>
@@ -72,7 +73,7 @@
             </ul>
         </article>
         <br>
-        <a href="vinhos.html">Veja mais opções!</a>
+        <a href="/pages/vinhos.html">Veja mais opções!</a>
     </section>
     <section class="entrega">
         <article>
@@ -124,18 +125,6 @@
         </div>
         <footer>Copyright © 2010-2024 Vinheira Agnello</footer>
     </section>
-
-    
-    <div class="modal" id="idadeModal">
-        <div class="modal-content">
-            <h2>Verificação de Idade</h2>
-            <p>Você tem mais de 18 anos?</p>
-            <button onclick="confirmIdade()">Sim</button>
-            <a href="https://www.google.com">Não</a>
-        </div>
-    </div>
-
-   
     <div class="modal" id="calculadoraModal">
         <div class="modal-content">
             <h2>Calculadora de Preços</h2>
@@ -157,26 +146,6 @@
         </div>
     </div>
 
-    <script>
-        
-        function confirmIdade() {
-         
-            console.log("Verificação de idade confirmada");
-            
-        }
-
-        function calcularPreco() {
-            var quantidadeGarrafas = parseInt(document.getElementById("quantidadeGarrafas").value);
-            var precoUnitario = 180.00; 
-            var precoTotal = quantidadeGarrafas * precoUnitario;
-            document.getElementById("precoTotal").innerText = "Preço Total: R$ " + precoTotal.toFixed(2);
-        }
-
-        function aplicarDesconto() {
-            var cupomCodigo = document.getElementById("cupomCodigo").value;
-            
-            document.getElementById("descontoAplicado").innerText = "Desconto aplicado: " + desconto + "%";
-        }
-    </script>
+    <script src="script.js"></script>
 </body>
 </html>
