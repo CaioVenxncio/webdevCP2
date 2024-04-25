@@ -11,6 +11,47 @@ html {
     font-family: "Montserrat", serif;
     margin: 0;
 }
+.container__compra {
+    display: flex;
+    padding: 1em;
+}
+.container__info {
+    text-align: center;
+    justify-content: center;
+    padding: 4em 6em 0 12em;
+}
+.container__imagem {
+    padding: 0 1em 0 5em;
+}
+.container__titulo {
+    font-size: 45px;
+}
+.container__preco {
+    font-size: 30px;
+}
+.container__adicionar {
+    text-align: center;
+    text-decoration: none;
+    padding: 0.5em;
+    justify-content: center;
+    background-color: #bd446d;
+    font-family: "Montserrat", sans-serif;
+    border: none;
+    height: 30px;
+    width: auto;
+    cursor: pointer;
+    margin: 1em;
+    color: #ffffff;
+    
+}
+.container__adicionar:hover {
+    background-color: #860f36
+}
+.container__cupom {
+    display: flex;
+    padding: 1em 0 0 0;
+    font-size: 20px;
+}
 
 h1,
 h2,

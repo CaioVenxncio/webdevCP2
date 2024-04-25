@@ -21,7 +21,34 @@ html {
   font-family: "Montserrat", serif;
   margin: 0;
 }
-
+.idade {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  text-decoration: none;
+  padding: 0.5em;
+  justify-content: center;
+  background-color: #bd446d;
+  font-family: "Montserrat", sans-serif;
+  border: none;
+  height: 30px;
+  width: auto;
+  cursor: pointer;
+  margin: 2em 40em 0 40em;
+  color: #ffffff;
+  
+}
+.idade:hover {
+  background-color: #860f36
+}
+.idade__frase {
+  color: red;
+  padding: 0 0 10em 0;
+}
+.verificacao {
+  text-align: center;
+  padding: 5em 0 0 0;
+}
 h1,
 h2,
 h3,
