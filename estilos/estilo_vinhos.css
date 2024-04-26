@@ -30,19 +30,24 @@ html {
     font-size: 30px;
 }
 .container__adicionar {
+    margin: 0 auto;
+    background-color:#bd446d;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
+    list-style: none;
+    outline: none;
+    padding: 10px 16px;    
     text-align: center;
     text-decoration: none;
-    padding: 0.5em;
-    justify-content: center;
-    background-color: #bd446d;
-    font-family: "Montserrat", sans-serif;
-    border: none;
-    height: 30px;
-    width: auto;
-    cursor: pointer;
-    margin: 1em;
-    color: #ffffff;
-    
+    font-style: "Montserrat", sans-serif;
+    font-weight: bold
 }
 .container__adicionar:hover {
     background-color: #860f36
@@ -137,6 +142,7 @@ nav a:hover {
     text-align: center;
     text-decoration: none;
     font-style: "Montserrat", sans-serif;
+    font-weight: bold
 }
 
 .produtos__tinto {

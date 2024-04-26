@@ -130,18 +130,28 @@ article {
 }
 
 .lista-vinhos img{
-  width: 350px;
+  width: 300px;
   height: 400px;
 }
-.lista-vinhos button{
-  background-color: #bd446d;
-  font-family: "Montserrat", sans-serif;
-  border: none;
-  height: 30px;
-  width: auto;
+.lista-vinhos button{ 
+  margin: 0 auto;
+  background-color:#bd446d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
   cursor: pointer;
-  margin-top: 20px;
-  color: #ffffff;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;
+  text-align: center;
+  text-decoration: none;
+  font-style: "Montserrat", sans-serif;
+  font-weight: bold;
 }
 
 .lista-vinhos button:hover{
