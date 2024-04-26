@@ -4,10 +4,8 @@
 }
 .lista-vinhos{
     display:flex;
-    
-}
-.lista-vinhos img{
-    width: 10rem;
+    flex-wrap: wrap;
+    padding-left: 0;
 }
 
 *,
@@ -52,7 +50,6 @@ html {
 }
 h1,
 h2,
-h3,
 h4,
 h5,
 h6,
@@ -126,6 +123,10 @@ nav a:hover {
 
 div li {
   color: white;
+}
+
+article {
+  margin: 50px 0;
 }
 
 .lista-vinhos img{
@@ -334,3 +335,9 @@ footer a {
 .com ul li{
   padding:5px 0;
 }
+
+.centered {
+  margin: 0 auto;
+  width: 50%;
+}
+

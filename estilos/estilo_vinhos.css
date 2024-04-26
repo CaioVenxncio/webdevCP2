@@ -88,6 +88,9 @@ nav li {
     align-items: center;
     list-style: none;
 }
+section div {
+    justify-content: center;
+}
 
 nav a {
     text-decoration: none;
@@ -113,11 +116,11 @@ nav a:hover {
 }
 
 .produtos span {
-    margin-left: 1rem;
+    margin: 0 auto;
 }
 
 .produtos button {
-    margin-left: 1rem;
+    margin: 0 auto;
     background-color:#bd446d;
     border-radius: 8px;
     border-style: none;
@@ -137,11 +140,17 @@ nav a:hover {
 }
 
 .produtos__tinto {
+    justify-content: center;
     align-items: center;
     border: #676767 solid;
     box-shadow: 0 0 30px lightgray;
     border-radius: 5px;
+    
+}
 
+.produtos__tinto h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .produtos__tinto:hover {
@@ -150,10 +159,16 @@ nav a:hover {
 }
 
 .produtos__espumante {
+    justify-content: center;
     align-items: center;
     border: #676767 solid;
     box-shadow: 0 0 30px lightgray;
     border-radius: 5px;
+}
+
+.produtos__espumante h3 {
+    display: flex;
+    justify-content: center;
 }
 
 .produtos__espumante:hover {
@@ -163,10 +178,17 @@ nav a:hover {
 
 .produtos__branco {
     align-items: center;
+    justify-content: center;
     border: #676767 solid;
     box-shadow: 0 0 30px lightgray;
     border-radius: 5px;
 }
+
+.produtos__branco h3 {
+    display: flex;
+    justify-content: center;
+}
+
 
 .produtos__branco:hover {
     border: #802946be solid;
@@ -179,10 +201,24 @@ nav a:hover {
 }
 
 .container {
-    justify-content: center;
+    padding: 20px;
 }
 
+.container img, 
+.container h3 {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
+.container div {
+    display: flex;
+    align-items: center;
+}
+
+.container span {
+    margin: 0 8px;
+}
 
 .main-footer {
     padding: 20px 0;
@@ -249,4 +285,8 @@ footer a {
 
 .com ul li {
     padding: 5px 0;
+}
+
+.center {
+    align-items: center;
 }
