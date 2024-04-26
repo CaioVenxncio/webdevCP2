@@ -20,6 +20,7 @@ body,
 html {
   font-family: "Montserrat", serif;
   margin: 0;
+  background-color: #fefff9;
 }
 .idade {
   display: flex;
@@ -94,6 +95,15 @@ nav a {
   transition: 0.1s ease-in-out;
   font-size: 20px;
 }
+
+.indexNavBar{
+  text-decoration: none;
+  color: #676767;
+  padding: 0 1rem;
+  transition: 0.1s ease-in-out;
+  font-size: 20px;
+}
+
 nav a:hover {
   color: #860f36;
 }
@@ -112,6 +122,10 @@ nav a:hover {
     margin:auto;
     list-style-type: none;
     
+}
+
+div li {
+  color: white;
 }
 
 .lista-vinhos img{
@@ -157,9 +171,6 @@ nav a:hover {
 }
 .inicio-sobre h1{
   font-size: 60px;
-}
-.inicio-sobre span{
-  color: #860f36;
 }
 
 .inicio-sobre img{
