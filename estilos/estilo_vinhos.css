@@ -57,7 +57,9 @@ html {
     padding: 1em 0 0 0;
     font-size: 20px;
 }
-
+.descricao__vinhos {
+    padding: 0 5em 0 5em;
+}
 h1,
 h2,
 h3,
