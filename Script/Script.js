@@ -5,6 +5,13 @@ let perignon = 180;
 let mazzeo = 280;
 let alion = 1400;
 
+let qtdchateu = 0;
+let qtdsauvignon = 0;
+let qtdbolani = 0;
+let qtdperignon = 0;
+let qtdmazzeo = 0;
+let qtdalion = 0;
+
 
 
 
@@ -18,4 +25,4 @@ function cupom() {
 function adicionar() {
     vinhoBranco1 = document.getElementById('chateu').value;0
     alert('Vinho adicionado com sucesso');    
-};
+};1
