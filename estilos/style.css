@@ -48,7 +48,33 @@ html {
   text-align: center;
   padding: 5em 0 0 0;
 }
-
+.formulario {
+  text-align: center;
+  padding: 4em 0 4em 0;
+}
+.formulario__nome, .formulario__email, .formulario__mensagem {
+  font-size: 20px;
+}
+.formulario__enviar {
+  margin: 0 auto;
+  background-color:#bd446d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;    
+  text-align: center;
+  text-decoration: none;
+  font-style: "Montserrat", sans-serif;
+  font-weight: bold;
+}
 h1,
 h2,
 h4,
@@ -352,3 +378,9 @@ footer a {
   width: 50%;
 }
 
+.footer__contato {
+  color: #f1f1f1;
+}
+.footer__contato:hover {
+  color: black;
+}

@@ -47,7 +47,7 @@ html {
     text-align: center;
     text-decoration: none;
     font-style: "Montserrat", sans-serif;
-    font-weight: bold
+    font-weight: bold;
 }
 .container__adicionar:hover {
     background-color: #860f36
@@ -304,3 +304,9 @@ footer a {
 .center {
     align-items: center;
 }
+.footer__contato {
+    color: #f1f1f1;
+  }
+  .footer__contato:hover {
+    color: black;
+  }

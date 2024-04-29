@@ -23,6 +23,22 @@ function cupom() {
 };
 
 function adicionar() {
-    vinhoBranco1 = document.getElementById('chateu').value;0
+    var vinhoBranco1 = document.getElementById('chateu').value;
     alert('Vinho adicionado com sucesso');    
-};1
+};
+
+
+function formulario() {
+    var nome = document.getElementById('nome').value;
+    var email = document.getElementById('email').value;
+    var mensagem = document.getElementById('mensagem').value;
+    if (nome === '' || email === '' || mensagem === '') {
+        alert('Digite seu nome, mensagem e email!')
+    } else {
+        alert('Mensagem enviada com sucesso!')
+        nome.innerHTML = '';
+        email.innerHTML = '';
+        mensagem.innerHTML = '';
+    
+    }
+}

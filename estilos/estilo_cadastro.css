@@ -181,3 +181,9 @@ footer a {
 .com ul li {
     padding: 5px 0;
 }
+.footer__contato {
+    color: #f1f1f1;
+  }
+  .footer__contato:hover {
+    color: black;
+  }
