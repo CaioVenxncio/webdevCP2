@@ -11,25 +11,72 @@
 </head>
 <body>
     <header>
-        <h1>Vinheria Agnello</h1>
         <nav>
+            <p>
+                <a href="/pages/index.html"><b style = color:#860f36;>Vinheria</b> Agnello</b></a>
+            </p>
             <ul>
-                <li><a href="index.html">Home</a></li>
-                <li><a href="vinhos.html">Vinhos</a></li>
-                <li><a href="carrinho.html">Carrinho</a></li>
-                <li><a href="login.html">Login</a></li>
-                <li><a href="contato.html">Contato</a></li>
+                <li class="big-screens">
+                    <a href="/pages/home.html">Início</a>
+                    <a href="/pages/vinhos.html">Vinhos</a>
+                    <a href="/pages/sobrenos.html">Sobre nós</a>
+                    <a href="/pages/curiosidades.html">Curiosidades</a>
+                    <a href="/pages/cadastro.html" class="cad">Cadastrar</a>
+                    <a href="/pages/carrinho.html" onclick="carrinho()">Carrinho</a>
+                </li>
+                <li class="small-screens">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
             </ul>
         </nav>
     </header>
 
     <main>
-        <h2>Carrinho</h2>
+        <h2>Carrinho</h2> 
+        <div>
+            <p id="vinhoteca">
+            <p>X Château D'Anglès Classique</p></p>
+        </div>
+        <p id=""></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
+        <p></p>
         
+        <h3>Valor Total:<p id="valorTotal"></p></h3>
     </main>
 
-    <footer>
-        <p>© 2024 Vinheria Agnello. Todos os direitos reservados.</p>
-    </footer>
+    <section class="footer">
+        <div class="main-footer">
+            <div class="logoinfo">
+                <div class="contact-details" data-aos="fade-up">
+                    <a href="/pages/formulario.html" class="footer__contato">Entre em contato</a>
+                    <li>+11 99999-9999</li>
+                    <li>vinheriaagnello@hotmail.com</li>
+                    
+                    
+                </div>
+            </div>
+            <div class="com " data-aos="fade-up">
+                <ul>
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="vinhos.html">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="curiosidades.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
+    </section>
+    <script src="/Script/exibirVinhos.js"></script>
 </body>
 </html>

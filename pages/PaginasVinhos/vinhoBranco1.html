@@ -20,6 +20,7 @@
                     <a class = 'menu' href="/pages/sobrenos.html">Sobre nós</a>
                     <a class = 'menu' href="/pages/curiosidades.html">Curiosidades</a>
                     <a class = 'menu' href="/pages/cadastro.html" class="cad">Cadastrar</a>
+                    <a href="/pages/carrinho.html" >Carrinho</a>
                 </li>
             </ul>
         </nav>
@@ -32,8 +33,8 @@
                 <h2 class="container__titulo">Vinho Branco<br>Château D'Anglès Classique</h2>
                 <h3 class="container__preco">R$ 180,00</h3>
                 <div class="container__quantidade">
-                    <input type="text" placeholder="Digite sua quantidade" id="quantidadeChateu">
-                    <button id="adicionar" class="container__adicionar" onclick="adicionar(this.value)" id='chateu' value="chateu">Adicionar ao carinho</button>
+                    <input type="number" placeholder="Digite sua quantidade" id="quantidadeChateu">
+                    <button class="container__adicionar" onclick="mostrarSomaElementosUnicos()">Adicionar ao carinho</button>
                 </div>
                 
                 <div class="container__cupom">
