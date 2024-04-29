@@ -10,27 +10,22 @@ function cupom() {
         alert('Cupom Invalido!');
     }
 };
-var vinhos = [];
+var vinhos = [0, ];
+var vinhoteca = document.getElementById('vinhoteca');
 
-
-function adicionarVinhoteca() {
+function adicionar() {
     var quantidadeChateu = parseInt(document.getElementById('quantidadeChateu').value);
     vinhos.push(quantidadeChateu);
-}
-
-function mostrarSomaElementosUnicos() {
-    var uniqueVinhos = [...new Set(vinhos)];
-    var soma = uniqueVinhos.reduce((acc, val) => acc + val, 0);
-
-    var vinhotecaDiv = document.getElementById('vinhoteca');
-    var paragrafo = document.createElement('p');
-    paragrafo.textContent = 'Soma dos elementos únicos: ' + soma;
+    console.log(vinhos)
     
-    // Limpa o conteúdo anterior antes de adicionar o novo parágrafo
-    vinhotecaDiv.innerHTML = ''; 
-    vinhotecaDiv.appendChild(paragrafo);
 }
 
+function mostrarVinhos() {
+    console.log(vinhos)
+    vinhoteca.innerHTML = vinhos[]
+    
+}
+window.onload = mostrarVinhos
     /*
     var somaChateu = parseInt(document.getElementById('somaChateu'));
     var somaSauvignon = parseInt(document.getElementById('somaSauvignon'));
