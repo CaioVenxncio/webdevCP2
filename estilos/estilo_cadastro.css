@@ -155,31 +155,41 @@ footer a {
     color: #ffffff;
 }
 
-.contact-details {
-    margin-top: 20px;
-}
 
-.contact-details li {
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-details li {
     list-style: none;
     margin: 10px 0;
-}
-
-.contact-details li a {
-    text-decoration: none;
-    color: #f1f1f1;
-}
-
-.contact-details .fa {
-    color: #f1f1f1;
-    margin-right: 10px;
-}
-
-.com ul li {
-    padding: 5px 0;
-}
-.footer__contato {
+  }
+  
+  .contact-details li a {
+    text-decoration:none;
     color: #f1f1f1;
   }
-  .footer__contato:hover {
-    color: black;
+  
+  .contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 10px;
+  }
+
+  .contact-details {
+    margin-top: 20px;
+  }
+  
+  .contact-details li {
+    list-style: none;
+    margin: 10px 0;
+  }
+  
+  .contact-details li {
+    text-decoration:none;
+    color: #f1f1f1;
+  }
+  
+  .contact-details .fa {
+    color: #f1f1f1;
+    margin-right: 10px;
   }
