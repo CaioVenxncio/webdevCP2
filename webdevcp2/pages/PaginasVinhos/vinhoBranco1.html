@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/estilos/estilo_vinhos.css">
+    <title>Vinho Branco Château D'Anglès Classique</title>
+</head>
+<body>
+    <header>    
+        <nav>
+            <p>
+                <a href="/pages/index.html"><b style = color:#860f36;>Vinheria</b> Agnello</a>
+            </p>
+            <ul>
+                <li>
+                    <a class = 'menu' href="/pages/home.html">Início</a>
+                    <a class = 'menu' href="/pages/vinhos.html">Vinhos</a>
+                    <a class = 'menu' href="/pages/sobrenos.html">Sobre nós</a>
+                    <a class = 'menu' href="/pages/curiosidades.html">Curiosidades</a>
+                    <a class = 'menu' href="/pages/cadastro.html" class="cad">Cadastrar</a>
+                </li>
+            </ul>
+        </nav>
+    </header>
+
+    <section>
+        <div class="container__compra">
+            <img src="/imagens/brancoChateau.png" alt="Vinho branco em garrafa e taças" width="400px" height="400px" class="container__imagem">
+            <div class="container__info">
+                <h2 class="container__titulo">Vinho Branco<br>Château D'Anglès Classique</h2>
+                <h3 class="container__preco">R$ 180,00</h3>
+                <div class="container__quantidade">
+                    <input type="text" placeholder="Digite sua quantidade" id="quantidadeChateu">
+                    <button id="adicionar" class="container__adicionar" onclick="adicionar(this.value)" id='chateu' value="chateu">Adicionar ao carinho</button>
+                </div>
+                
+                <div class="container__cupom">
+                    <input type="text" placeholder="Digite seu cupom" id="cupom">
+                    <button class="container__adicionar" onclick="cupom()">Teste seu cupom</button>
+                </div>
+
+            </div>
+        </div>
+        <div class="descricao__vinhos"> 
+            <p>Apresentando o Château D'Anglès Classique, um vinho branco que reflete o esplendor e a elegância dos vinhos do sul da França, mais especificamente da prestigiada região de La Clape, no Languedoc-Roussillon. Este exemplar é uma verdadeira expressão do terroir único onde é produzido, combinando tradição, inovação e paixão pela viticultura.</p>
+            <p>Elaborado predominantemente a partir da uva Vermentino, uma variedade que floresce sob o sol mediterrâneo, o Château D'Anglès Classique brilha com sua cor amarelo-palha e reflexos dourados, convidando a um deleite visual desde o primeiro momento.</p>
+            <p>No nariz, este vinho branco revela uma profusão de aromas frescos e frutados, com notas cítricas de limão e grapefruit, delicadamente equilibradas por nuances florais e herbáceas, que conferem complexidade e elegância.</p>
+            <p>Na boca, o Château D'Anglès Classique encanta com sua textura suave e cremosa, complementada por uma acidez refrescante e um final persistente e mineral. Sua harmonia e equilíbrio tornam-no um companheiro ideal para uma variedade de pratos, desde frutos do mar frescos até saladas verdes e queijos de cabra.</p>
+            <p>Este vinho branco é mais do que uma simples bebida; é uma jornada sensorial que transporta o consumidor para os campos ensolarados do sul da França, onde cada gole é uma celebração da arte de cultivar a terra e criar vinhos excepcionais. Desfrute do Château D'Anglès Classique em momentos especiais com amigos e familiares, e deixe-se envolver pela magia e pela autenticidade deste tesouro vinícola francês.</p>
+        </div>
+    </section>
+
+    <section>
+        <div class="main-footer">
+            <div class="logoinfo">
+                <div class="contact-details">
+                    <a href="/pages/formulario.html" class="footer__contato">Entre em contato</a>
+                    <li>+11 99999-9999</li>
+                    <li>vinheriaagnello@hotmail.com</li>
+                </div>
+            </div>
+            <div>
+                <ul>
+                    <li>
+                        <a href="#">Início</a>
+                    </li>
+                    <li>
+                        <a href="#">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="#">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="#">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
+    </section>
+    <script src="/Script/Script.js"></script>
+</body>
+</html>

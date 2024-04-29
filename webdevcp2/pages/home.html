@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Site oficial da Vinheria Agnello, responsável pelos melhores vinhos pelo melhor preço e atendimento">
+    <meta name="keywords" content="Vinhos, Agnello, Vinheria, Sommeliers">
+    <link rel="stylesheet" href="/estilos/style.css">
+    <title>Vinheria Agnello - Seu vinho aqui!</title>
+    
+</head>
+<body>
+    <header>
+        <nav>
+            <p>
+                <a href="/pages/index.html"><b style = color:#860f36;>Vinheria</b> Agnello</b></a>
+            </p>
+            <ul>
+                <li class="big-screens">
+                    <a href="/pages/home.html">Início</a>
+                    <a href="/pages/vinhos.html">Vinhos</a>
+                    <a href="/pages/sobrenos.html">Sobre nós</a>
+                    <a href="/pages/curiosidades.html">Curiosidades</a>
+                    <a href="/pages/cadastro.html" class="cad">Cadastrar</a>
+                </li>
+                <li class="small-screens">
+                    <i class="fa-solid fa-bars"></i>
+                </li>
+            </ul>
+        </nav>
+    </header>
+    <section class="inicio">
+        <h1>Seja bem-vindo à <b style = color:#860f36;>Vinheria</b><b style="color: #767676;"> Agnello</b> !</h1>
+        <h3>De amantes de vinhos, para amantes de vinhos.</h3>
+        <p style="padding: 0 100px;">
+            Descubra um mundo de requinte e sabor na Vinheria Agnello! Seja bem-vindo ao seu destino <i>premium</i> para os
+            amantes de vinho. Aqui, cada garrafa conta uma história, cada taça é uma jornada sensorial única. De
+            tintos encorpados a brancos refrescantes, nossa seleção meticulosa oferece uma experiência inigualável
+            para os apreciadores mais exigentes. 
+            <br>
+            <br>
+            Explore nossa coleção cuidadosamente curada e entregue-se ao prazer
+            de degustar os melhores vinhos, diretamente na sua porta. Sinta-se em casa na Vinheria Agnello – onde o
+            bom gosto encontra o seu lugar.
+        </p>
+    </section>
+    <section class="vinhos">
+        <article><br>
+            <h2>Vinhos mais vendidos</h2>
+            <ul class="lista-vinhos">
+                <li class="vinhos">
+                    <img src="/imagens/tintoVega.png" alt="Vinho tinto em garrafa">
+                    <h3>Tinto Alion Vega Sicilia 2013</h3>
+                    <span>R$ 1400,00</span>
+                    <br>
+                    <a href="/pages/PaginasVinhos/vinhoTinto2.html"><button>Mais detalhes</button></a>
+                </li>
+                <li class="vinhos">
+                    <img src="/imagens/tintoMazeo.png" width="" alt="Vinho tinto em garrafa e taça">
+                    <h3>Tinto Italiano Mazzeo Chianti Clássico 2019</h3>
+                    <span>R$ 280,00</span>
+                    <br>
+                    <a href="/pages/PaginasVinhos/vinhoTinto1.html"><button>Mais detalhes</button></a>
+                </li>
+                <li class="vinhos">
+                    <img src="/imagens/brancoChateau.png" alt="Vinho branco em garrafa e taças">
+                    <h3>Branco Château D'Anglès Classique</h3>
+                    <span>R$ 180,00</span>
+                    <br>
+                    <a href="/pages/PaginasVinhos/vinhoBranco1.html"><button>Mais detalhes</button></a>
+                </li>
+            </ul>
+            <br>
+            <div class = "centered"><a href="/pages/vinhos.html">Veja mais opções!</a></div>
+        </article>
+    </section>
+    <section class="entrega">
+        <article style="padding: 100px;">
+            <h2>Como funciona o Delivery na Agnello?</h2>
+            <img src="/imagens/v6.png" alt="Caixa de vinhos selecionados" class="imagens">
+            <p>
+                Na experiência de compra no site oficial da Vinheria Agnello, os
+                clientes desfrutam de duas opções cativantes para receber seus vinhos: a
+                conveniência de retirar pessoalmente na loja, imbuída da atmosfera
+                acolhedora e conhecimento dos sommeliers locais; ou a comodidade de ter
+                os vinhos entregues diretamente em suas casas, onde cada garrafa conta
+                sua própria história, transportando os clientes para as vinhas de origem
+                em cada gole.
+            </p>
+        </article>
+    </section>
+    <section class="footer">
+        <div class="main-footer">
+            <div class="logoinfo">
+                <div class="contact-details" data-aos="fade-up">
+                    <a href="/pages/formulario.html" class="footer__contato">Entre em contato</a>
+                    <li>+11 99999-9999</li>
+                    <li>vinheriaagnello@hotmail.com</li>
+                    
+                    
+                </div>
+            </div>
+            <div class="com " data-aos="fade-up">
+                <ul>
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="vinhos.html">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="curiosidades.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
+    </section>
+    <div class="modal" id="calculadoraModal">
+        <div class="modal-content">
+            <h2>Calculadora de Preços</h2>
+            <p>Informe a quantidade de garrafas:</p>
+            <input type="number" id="quantidadeGarrafas">
+            <button onclick="calcularPreco()">Calcular</button>
+            <p id="precoTotal"></p>
+        </div>
+    </div>
+
+    
+    <div class="modal" id="cupomModal">
+        <div class="modal-content">
+            <h2>Cupom de Desconto</h2>
+            <p>Insira o código do cupom:</p>
+            <input type="text" id="cupomCodigo">
+            <button onclick="aplicarDesconto()">Aplicar</button>
+            <p id="descontoAplicado"></p>
+        </div>
+    </div>
+
+    <script src="/Script/Script.js"></script>
+</body>
+</html>
