@@ -10,22 +10,53 @@ function cupom() {
         alert('Cupom Invalido!');
     }
 };
-var vinhos = [0, ];
+var vinhos = [];
 var vinhoteca = document.getElementById('vinhoteca');
 
-function adicionar() {
+/*function adicionar() {
     var quantidadeChateu = parseInt(document.getElementById('quantidadeChateu').value);
     vinhos.push(quantidadeChateu);
     console.log(vinhos)
     
+}*/
+var numero = [];
+function adicionar() {
+    // Recupera o número do input com o id "numeroInput"
+    var numero = parseInt(document.getElementById('numeroInput').value);
+    
+    // Verifica se o número é válido (não vazio)
+    if (!isNaN(numero)) {
+        // Recupera a array do localStorage ou cria uma nova array vazia se não existir
+        var numeros = JSON.parse(localStorage.getItem('numeros')) || [];
+        
+        // Soma os números presentes na array
+        var soma = numeros.reduce(function(acc, curr) {
+            return acc + parseInt(curr);
+        }, 0);
+        
+        // Adiciona o novo número à array
+        numeros.push(numero);
+        
+        // Soma o novo número à soma anterior
+        soma += numero;
+        
+        // Converte a array para JSON e armazena no localStorage
+        localStorage.setItem('numeros', JSON.stringify(numeros));
+        
+        // Limpa o input para que o usuário possa inserir outro número
+        document.getElementById('numeroInput').value = '';
+        
+        alert('Número adicionado com sucesso! Soma total: ' + soma);
+    } else {
+        alert('Por favor, insira um número válido.');
+    }
 }
-
-function mostrarVinhos() {
-    console.log(vinhos)
-    vinhoteca.innerHTML = vinhos[]
+/*function mostrarVinhos() {
+    console.log(vinhos.slice)
+    vinhoteca.innerHTML = vinhos
     
 }
-window.onload = mostrarVinhos
+window.onload = mostrarVinhos*/ 
     /*
     var somaChateu = parseInt(document.getElementById('somaChateu'));
     var somaSauvignon = parseInt(document.getElementById('somaSauvignon'));
@@ -74,9 +105,7 @@ function formulario() {
         alert('Espaços Vazios\nDigite seu nome, mensagem e email!')
     } else {
         alert('Mensagem enviada com sucesso!')
-        nome.innerHTML = '';
-        email.innerHTML = '';
-        mensagem.innerHTML = '';
+
     
     }
 };

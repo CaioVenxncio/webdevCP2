@@ -10,6 +10,9 @@
     <link rel="stylesheet" href="/estilos/style.css">
 </head>
 <body>
+    
+
+    
     <header>
         <nav>
             <p>
@@ -22,7 +25,7 @@
                     <a href="/pages/sobrenos.html">Sobre nós</a>
                     <a href="/pages/curiosidades.html">Curiosidades</a>
                     <a href="/pages/cadastro.html" class="cad">Cadastrar</a>
-                    <a href="/pages/carrinho.html" onclick="carrinho()">Carrinho</a>
+                    <a href="/pages/carrinho.html">Carrinho</a>
                 </li>
                 <li class="small-screens">
                     <i class="fa-solid fa-bars"></i>
@@ -34,7 +37,7 @@
     <main>
         <h2>Carrinho</h2> 
         <div>
-            <p id="vinhoteca">
+            <p id="numList">
             <p>X Château D'Anglès Classique</p></p>
         </div>
         <p id=""></p>
@@ -43,7 +46,7 @@
         <p></p>
         <p></p>
         <p></p>
-        
+            
         <h3>Valor Total:<p id="valorTotal"></p></h3>
     </main>
 
@@ -78,6 +81,32 @@
         </div>
         <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
     </section>
-    <script src="/Script/exibirVinhos.js"></script>
+    <script>
+        document.addEventListener("DOMContentLoaded", function() {
+            var numeros = JSON.parse(localStorage.getItem('numeros'));
+            var lista = document.getElementById("numList");
+            var soma = 0; // Inicializa a variável soma
+    
+            // Verifica se a variável numeros não é null antes de iterar sobre ela
+            if (numeros !== null) {
+                // Itera sobre os números e os adiciona à lista
+                numeros.forEach(function(numero) {
+                    
+                    // Soma o número à variável soma
+                    soma += parseFloat(numero);
+                });
+    
+                // Cria um elemento para exibir a soma total
+                var somaElement = document.createElement("p");
+                somaElement.textContent = "Soma total: " + soma;
+                
+                // Adiciona o elemento da soma à lista
+                lista.appendChild(somaElement);
+            } else {
+                console.log("Nenhum número encontrado no localStorage.");
+            }
+        });
+    </script>
+    <script src="/Script/Script.js"></script>
 </body>
 </html>

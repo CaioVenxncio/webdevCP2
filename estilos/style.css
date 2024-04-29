@@ -349,7 +349,9 @@ footer a {
   text-decoration: none;
   color: #ffffff;
 }
-
+.footer__contato:hover {
+  color: black;
+}
 .contact-details {
   margin-top: 20px;
 }

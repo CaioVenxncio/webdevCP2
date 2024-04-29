@@ -73,7 +73,7 @@ nav a:hover {
     border-radius: 10px;
     width: 350px;
     height: 400px;
-    margin-left: 35%;
+    margin-left: 38%;
     margin-bottom: 10%;
     
 }
@@ -93,7 +93,7 @@ nav a:hover {
 }
 
 .form-cadastro p {
-    text-align: justify;
+    text-align: center;
     padding: 1rem;
     font-size: large;
 }
@@ -140,7 +140,9 @@ nav a:hover {
     color: #ffffffcc;
     text-decoration: none;
 }
-
+.footer__contato:hover {
+    color: black;
+  }
 footer {
     background-color: #860f36;
     border-top: 1px solid #bd446d;
