@@ -7,21 +7,21 @@
     <meta name="description" content="Equipe da Vinheria Agnello, responsáveis pelos vinhos">
     <meta name="keywords" content="Vinhos, Agnello, Vinheria, Sommeliers">
     <title>Vinheria Agnello - sobre nós</title>
-    <link rel="stylesheet" href="/estilos/style.css">
+    <link rel="stylesheet" href="/estilos/estilo_cadastro.css">
 </head>
 <body>
     <header>
-        <nav>
+        <nav class="flex align-center">
             <p>
-                <a href="/pages/index.html"><b style = color:#860f36;>Vinheria</b> Agnello</b></a>
+                <a href="/pages/index.html"><b style = color:#860f36;>Vinheria</b> Agnello</a>
             </p>
             <ul>
                 <li class="big-screens">
-                    <a href="/pages/home.html">Início</a>
-                    <a href="/pages/vinhos.html">Vinhos</a>
-                    <a href="/pages/sobrenos.html">Sobre nós</a>
-                    <a href="/pages/curiosidades.html">Curiosidades</a>
-                    <a href="/pages/cadastro.html" class="cad">Cadastrar</a>
+                    <a class = 'menu' href="/pages/home.html">Início</a>
+                    <a class = 'menu' href="/pages/vinhos.html">Vinhos</a>
+                    <a class = 'menu' href="/pages/sobrenos.html">Sobre nós</a>
+                    <a class = 'menu' href="/pages/curiosidades.html">Curiosidades</a>
+                    <a class = 'menu' href="/pages/cadastro.html" class="cad">Cadastrar</a>
                 </li>
                 <li class="small-screens">
                     <i class="fa-solid fa-bars"></i>
@@ -31,18 +31,53 @@
     </header>
 
     <main>
-        <h2>Login</h2>
-        <form action="login.php" method="post">
-            <label for="email">Email:</label>
-            <input type="email" id="email" name="email" required><br><br>
-            <label for="senha">Senha:</label>
-            <input type="password" id="senha" name="senha" required><br><br>
-            <input type="submit" value="Entrar">
-        </form>
+        <div class="form-cadastro">
+            <h2> Faça Login</h2>
+            <form action="">
+                <label for="">E-mail:</label><br>
+                <input type="text" placeholder="Digite seu e-mail" class="texto" id="entrarEmail"> <br><br>
+                <label for="">Senha:</label><br>
+                <input type="text" placeholder="Digite sua senha" class="texto" id="entrarSenha"><br><br>
+                <button onclick="entrar()">Entrar</button>
+            </form>   
+        </div>
     </main>
 
-    <footer>
-        <p>© 2024 Vinheria Agnello. Todos os direitos reservados.</p>
-    </footer>
+    <section class="footer">
+        <div class="main-footer">
+            <div class="logoinfo">
+                <div class="contact-details" data-aos="fade-up">
+                    <a href="/pages/formulario.html" class="footer__contato">Entre em contato</a>
+                    <li>
+                        <div class="fa fa-phone"></div>
+                        <a>+11 99999-9999</a>
+                    </li>
+                    <li>
+                        <div class="fa fa-envelope"></div>
+                        <a href="">vinheriaagnello@hotmail.com</a>
+                    </li>
+                    </li>
+                </div>
+            </div>
+            <div class="com " data-aos="fade-up">
+                <ul>
+                    <li>
+                        <a href="home.html">Início</a>
+                    </li>
+                    <li>
+                        <a href="vinhos.html">Vinhos</a>
+                    </li>
+                    <li>
+                        <a href="sobrenos.html">Sobre nós</a>
+                    </li>
+                    <li>
+                        <a href="curiosidades.html">Curiosidades</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
+    </section>
+    <script src="/Script/Script.js"></script>
 </body>
 </html>

@@ -48,14 +48,14 @@ html {
   text-align: center;
   padding: 5em 0 0 0;
 }
-.formulario {
+.formulario, .login {
   text-align: center;
   padding: 4em 0 4em 0;
 }
-.formulario__nome, .formulario__email, .formulario__mensagem {
+.formulario__nome, .formulario__email, .formulario__mensagem, .login__email, .login__senha{
   font-size: 20px;
 }
-.formulario__enviar {
+.formulario__enviar, .login__entrar {
   margin: 0 auto;
   background-color:#bd446d;
   border-radius: 8px;

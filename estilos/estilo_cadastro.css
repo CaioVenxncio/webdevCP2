@@ -91,11 +91,7 @@ nav a:hover {
     outline: none;
     box-shadow: rgba(225, 228, 232, 0.2) 0px 1px 0px 0px inset;
 }
-.texto:focus{
-    border-color: #d029464f;
-    outline: none;
-    box-shadow: rgba(226, 83, 150, 0.3) 0px 0px 0px 3px;
-}
+
 .form-cadastro p {
     text-align: justify;
     padding: 1rem;
