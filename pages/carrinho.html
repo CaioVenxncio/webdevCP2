@@ -37,27 +37,27 @@
     <main>
         <h2>Carrinho</h2> 
         <div class="carrinho">
-            <p id="numList1"></p> 
+            <p id="numeros1"></p> 
             <p> Château D'Anglès Classique</p>
             <p id=""></p>
         </div>
         <div class="carrinho">
-            <p id="numList2"></p> 
+            <p id="numeros2"></p> 
             <p> Cloudy Bay Sauvignon Blanc</p>
             <p id=""></p>
         </div>
         <div class="carrinho">
-            <p id="numList3"></p> 
+            <p id="numeros3"></p> 
             <p> Mazzeo Chianti 2019</p>
             <p id=""></p>
         </div>
         <div class="carrinho">
-            <p id="numList4"></p> 
+            <p id="numeros4"></p> 
             <p> Alion Vega Sicilia 2013</p>
             <p id=""></p>
         </div>
         <div class="carrinho">
-            <p id="numList5"></p> 
+            <p id="numeros5"></p> 
             <p> Ca Bolani Prosecco</p>
             <p id=""></p>
         </div>
@@ -102,26 +102,26 @@
         <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
     </section>
     <script>
-        var listas = ["numList1", "numList2", "numList3", "numList4", "numList5", "numList6"];
-        listas.forEach(function(listaID) {
-            var numeros = JSON.parse(localStorage.getItem(listaID)) || [];
-            var soma = numeros.reduce(function(acc, curr) {
-                return acc + curr;
-            }, 0);
+        // Carrega a array do localStorage
+        var numeros = JSON.parse(localStorage.getItem('numeros')) || {};
 
-            var listaElement = document.getElementById(listaID);
-            listaElement.innerHTML = ''; // Limpa a lista antes de atualizar
+        // Seleciona o container onde os elementos serão exibidos
+        var container = document.getElementById('container');
 
-            numeros.forEach(function(numero) {
-                var li = document.createElement("li");
-                li.textContent = numero;
-                listaElement.appendChild(li);
+        // Verifica se a array numeros não é null antes de atualizar os elementos HTML com os números
+        if (numeros !== null) {
+            // Itera sobre as chaves e valores da array
+            Object.keys(numeros).forEach(function(key) {
+                // Cria um elemento para exibir o número
+                var numeroElement = document.createElement('p');
+                numeroElement.textContent = key + ': ' + numeros[key];
+
+                // Adiciona o elemento ao container
+                container.appendChild(numeroElement);
             });
-
-            var somaElement = document.createElement("li");
-            somaElement.textContent = "Soma: " + soma;
-            listaElement.appendChild(somaElement);
-        });
+        } else {
+            console.log("Nenhum número encontrado no localStorage.");
+        }
     </script>
     <script src="/Script/Script.js"></script>
 </body>
