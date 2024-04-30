@@ -36,16 +36,36 @@
 
     <main>
         <h2>Carrinho</h2> 
-        <div>
-            <p id="numList">
-            <p>X Château D'Anglès Classique</p></p>
+        <div class="carrinho">
+            <p id="numList1"></p> 
+            <p> Château D'Anglès Classique</p>
+            <p id=""></p>
         </div>
-        <p id=""></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
-        <p></p>
+        <div class="carrinho">
+            <p id="numList2"></p> 
+            <p> Cloudy Bay Sauvignon Blanc</p>
+            <p id=""></p>
+        </div>
+        <div class="carrinho">
+            <p id="numList3"></p> 
+            <p> Mazzeo Chianti 2019</p>
+            <p id=""></p>
+        </div>
+        <div class="carrinho">
+            <p id="numList4"></p> 
+            <p> Alion Vega Sicilia 2013</p>
+            <p id=""></p>
+        </div>
+        <div class="carrinho">
+            <p id="numList5"></p> 
+            <p> Ca Bolani Prosecco</p>
+            <p id=""></p>
+        </div>
+        <div class="carrinho">
+            <p id="numList6"></p> 
+            <p> Champagne Dom Perignon Vintage</p>
+            <p id=""></p>
+        </div>
             
         <h3>Valor Total:<p id="valorTotal"></p></h3>
     </main>
@@ -82,29 +102,25 @@
         <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
     </section>
     <script>
-        document.addEventListener("DOMContentLoaded", function() {
-            var numeros = JSON.parse(localStorage.getItem('numeros'));
-            var lista = document.getElementById("numList");
-            var soma = 0; // Inicializa a variável soma
-    
-            // Verifica se a variável numeros não é null antes de iterar sobre ela
-            if (numeros !== null) {
-                // Itera sobre os números e os adiciona à lista
-                numeros.forEach(function(numero) {
-                    
-                    // Soma o número à variável soma
-                    soma += parseFloat(numero);
-                });
-    
-                // Cria um elemento para exibir a soma total
-                var somaElement = document.createElement("p");
-                somaElement.textContent = "Soma total: " + soma;
-                
-                // Adiciona o elemento da soma à lista
-                lista.appendChild(somaElement);
-            } else {
-                console.log("Nenhum número encontrado no localStorage.");
-            }
+        var listas = ["numList1", "numList2", "numList3", "numList4", "numList5", "numList6"];
+        listas.forEach(function(listaID) {
+            var numeros = JSON.parse(localStorage.getItem(listaID)) || [];
+            var soma = numeros.reduce(function(acc, curr) {
+                return acc + curr;
+            }, 0);
+
+            var listaElement = document.getElementById(listaID);
+            listaElement.innerHTML = ''; // Limpa a lista antes de atualizar
+
+            numeros.forEach(function(numero) {
+                var li = document.createElement("li");
+                li.textContent = numero;
+                listaElement.appendChild(li);
+            });
+
+            var somaElement = document.createElement("li");
+            somaElement.textContent = "Soma: " + soma;
+            listaElement.appendChild(somaElement);
         });
     </script>
     <script src="/Script/Script.js"></script>

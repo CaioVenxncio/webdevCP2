@@ -32,9 +32,11 @@
             <div class="container__info">
                 <h2 class="container__titulo">Vinho Branco<br>Cloudy Bay Sauvignon Blanc</h2>
                 <h3 class="container__preco">R$ 320,00</h3>
-                <button id="adicionar" class="container__adicionar">Adicionar ao carinho</button>
+                <div class="container__quantidade">
+                    <input type="number" placeholder="Digite sua quantidade" id="numeroInput2">
+                    <button class="container__adicionar" onclick="adicionar()">Adicionar ao carinho</button>
+                </div>
                 <div class="container__cupom">
-                    <p>Cupom:</p>
                     <input type="text" placeholder="Digite seu cupom" id="cupom">
                     <button class="container__adicionar" onclick="cupom()">Teste seu cupom</button>
                 </div>

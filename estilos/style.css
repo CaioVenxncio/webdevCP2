@@ -20,6 +20,10 @@ html {
   margin: 0;
   background-color: #fefff9;
 }
+.carrinho {
+  display: flex;
+  align-items: center;
+}
 .idade {
   display: flex;
   justify-content: center;

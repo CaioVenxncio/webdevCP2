@@ -19,39 +19,34 @@ var vinhoteca = document.getElementById('vinhoteca');
     console.log(vinhos)
     
 }*/
-var numero = [];
-function adicionar() {
-    // Recupera o número do input com o id "numeroInput"
-    var numero = parseInt(document.getElementById('numeroInput').value);
-    
-    // Verifica se o número é válido (não vazio)
-    if (!isNaN(numero)) {
-        // Recupera a array do localStorage ou cria uma nova array vazia se não existir
-        var numeros = JSON.parse(localStorage.getItem('numeros')) || [];
-        
-        // Soma os números presentes na array
-        var soma = numeros.reduce(function(acc, curr) {
-            return acc + parseInt(curr);
-        }, 0);
-        
-        // Adiciona o novo número à array
-        numeros.push(numero);
-        
-        // Soma o novo número à soma anterior
-        soma += numero;
-        
-        // Converte a array para JSON e armazena no localStorage
-        localStorage.setItem('numeros', JSON.stringify(numeros));
-        
-        // Limpa o input para que o usuário possa inserir outro número
-        document.getElementById('numeroInput').value = '';
-        
-        alert('Número adicionado com sucesso! Soma total: ' + soma);
-    } else {
-        alert('Por favor, insira um número válido.');
+var numeros = [];
+window.addEventListener('beforeunload', function(event) {
+    if (!navigator.sendBeacon) {
+        localStorage.removeItem('numeros'); // Remove a array do localStorage apenas quando o navegador for fechado
     }
+});
+
+function adicionar() {
+    var numeros = JSON.parse(localStorage.getItem('numeros')) || {};
+    var inputs = document.querySelectorAll('input[type="number"]');
+    
+    inputs.forEach(function(input) {
+        var numero = parseFloat(input.value.trim());
+        if (!isNaN(numero)) {
+            var id = input.id;
+            var listaNumeros = numeros[id] || [];
+            listaNumeros.push(numero);
+            numeros[id] = listaNumeros;
+        }
+    });
+
+    localStorage.setItem('numeros', JSON.stringify(numeros));
+    console.log('Números adicionados:', numeros);
 }
-/*function mostrarVinhos() {
+
+
+/*function mostrarVinhos() {    
+
     console.log(vinhos.slice)
     vinhoteca.innerHTML = vinhos
     
