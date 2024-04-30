@@ -79,6 +79,10 @@ html {
   font-style: "Montserrat", sans-serif;
   font-weight: bold;
 }
+.valor__total {
+  display: flex;
+}
+
 h1,
 h2,
 h4,
@@ -389,4 +393,10 @@ footer a {
 }
 .footer__contato:hover {
   color: black;
+}
+a {
+  color: #860f36;
+}
+a:hover {
+  color: #bd446d;
 }

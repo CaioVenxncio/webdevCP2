@@ -10,85 +10,6 @@ function cupom() {
         alert('Cupom Invalido!');
     }
 };
-var vinhos = [];
-var vinhoteca = document.getElementById('vinhoteca');
-
-/*function adicionar() {
-    var quantidadeChateu = parseInt(document.getElementById('quantidadeChateu').value);
-    vinhos.push(quantidadeChateu);
-    console.log(vinhos)
-    
-}*/
-var numeros = [];
-window.addEventListener('beforeunload', function(event) {
-    if (!navigator.sendBeacon) {
-        localStorage.removeItem('numeros'); // Remove a array do localStorage apenas quando o navegador for fechado
-    }
-});
-
-function adicionar() {
-    var numeros = JSON.parse(localStorage.getItem('numeros')) || {};
-    var inputs = document.querySelectorAll('input[type="number"]');
-    
-    inputs.forEach(function(input) {
-        var numero = parseFloat(input.value.trim());
-        if (!isNaN(numero)) {
-            var id = input.id;
-            var listaNumeros = numeros[id] || [];
-            listaNumeros.push(numero);
-            numeros[id] = listaNumeros;
-        }
-    });
-
-    localStorage.setItem('numeros', JSON.stringify(numeros));
-    console.log('Números adicionados:', numeros);
-}
-
-
-/*function mostrarVinhos() {    
-
-    console.log(vinhos.slice)
-    vinhoteca.innerHTML = vinhos
-    
-}
-window.onload = mostrarVinhos*/ 
-    /*
-    var somaChateu = parseInt(document.getElementById('somaChateu'));
-    var somaSauvignon = parseInt(document.getElementById('somaSauvignon'));
-    var somaBolani = parseInt(document.getElementById('somaBolani'));
-    var somaPerignon = parseInt(document.getElementById('somaPerignon'));
-    var somaMazzeo = parseInt(document.getElementById('somaMazzeo'));
-    var somaAlion = parseInt(document.getElementById('somaAlion'));
-
-    var valorTotal = parseInt(document.getElementById('valorTotal')); 
-    var quantidadeChateu = 0;
-    var quantidadeSauvignon = 0;
-    var quantidadeBolani = 0;
-    var quantidadePerignon = 0;
-    var quantidadeMazzeo = 0;
-    var quantidadeAlion = 0;
-    var quantidade = parseInt(document.getElementById(id));
-    if (id === quantidadeChateu) {
-        quantidadeChateu += quantidade.value;
-    } else if (id === 'quantidadeSauvignon') {
-        quantidadeSauvignon += quantidade.value;
-    } else if (id === 'quantidadeBolani') {
-        quantidadeBolani += quantidade.value;
-    } else if (id === 'quantidadePerignon') {
-        quantidadePerignon += quantidade.value;
-    } else if (id === 'quantidadeMazzeo') {
-        quantidadeMazzeo += quantidade.value;
-    } else if (id === 'quantidadeAlion') {
-        quantidadeAlion += quantidade.value;
-    }
-    
-    somaChateu.innerHTML = quantidadeChateu;
-    
-    valorTotal.innerHTML =  valorTotal + (quantidadeAlion*1400) + (quantidadeBolani*150) + (quantidadeChateu*180) + (quantidadeMazzeo*280) + (quantidadePerignon*1900) + (quantidadeSauvignon*320) 
-    alert('Vinho adicionado com sucesso');  
-    console.log(valorTotal, quantidadeChateu) */
-
-     
 
 
 
@@ -122,3 +43,52 @@ function entrar() {
     
     }
 };
+var resultado1 = document.getElementById('valorProdutos1');
+var resultado2 = document.getElementById('valorProdutos2');
+var resultado3 = document.getElementById('valorProdutos3');
+var resultado4 = document.getElementById('valorProdutos4');
+var resultado5 = document.getElementById('valorProdutos5');
+var resultado6 = document.getElementById('valorProdutos6');
+var valor = document.getElementById('valorTotal')
+var valorTotal = 0
+function adicionar1() {
+    var qtdvinho1 = parseInt(document.getElementById('vinho1').value);
+    resultado1.innerHTML = qtdvinho1*180;
+    valorTotal += (qtdvinho1*180);
+    valor.innerHTML = valorTotal;
+}
+function adicionar2() {
+    var qtdvinho2 = parseInt(document.getElementById('vinho2').value);
+    resultado2.innerHTML = qtdvinho2*320;
+    valorTotal += (qtdvinho2*320);
+    valor.innerHTML = valorTotal;
+}
+function adicionar3() {
+    var qtdvinho3 = parseInt(document.getElementById('vinho3').value);
+    resultado3.innerHTML = qtdvinho3*150;
+    valorTotal += (qtdvinho3*150);
+    valor.innerHTML = valorTotal;
+}
+function adicionar4() {
+    var qtdvinho4 = parseInt(document.getElementById('vinho4').value);
+    resultado4.innerHTML = qtdvinho4*180;
+    valorTotal += (qtdvinho4*180);
+    valor.innerHTML = valorTotal;
+}
+
+function adicionar5() {
+    var qtdvinho5 = parseInt(document.getElementById('vinho5').value);
+    resultado5.innerHTML = qtdvinho5*280;
+    valorTotal += (qtdvinho5*280);
+    valor.innerHTML = valorTotal;
+}
+function adicionar6() {
+    var qtdvinho6 = parseInt(document.getElementById('vinho6').value);
+    resultado6.innerHTML = qtdvinho6*1400;
+    valorTotal += (qtdvinho6*1400);
+    valor.innerHTML = valorTotal;
+}
+
+function adicionarCarrinho() {
+    alert('Vinho adicionado ao carrinho!');
+}

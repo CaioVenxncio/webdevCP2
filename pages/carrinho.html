@@ -35,39 +35,46 @@
     </header>
 
     <main>
+       <div id="produtos" class="produtos"></div>
+
         <h2>Carrinho</h2> 
-        <div class="carrinho">
-            <p id="numeros1"></p> 
-            <p> Château D'Anglès Classique</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho1">
+            <button onclick="adicionar1()">Adicionar</button>
+            <p>Château D' Anglès Classique      R$</p>
+            <p id="valorProdutos1"></p>
         </div>
-        <div class="carrinho">
-            <p id="numeros2"></p> 
-            <p> Cloudy Bay Sauvignon Blanc</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho2">
+            <button onclick="adicionar2()">Adicionar</button>
+            <p>Cloudy Bay Sauvignon Blanc      R$</p>
+            <p id="valorProdutos2"></p>
         </div>
-        <div class="carrinho">
-            <p id="numeros3"></p> 
-            <p> Mazzeo Chianti 2019</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho3">
+            <button onclick="adicionar3()">Adicionar</button>
+            <p>Mazzeo Chianti 2019             R$</p>
+            <p id="valorProdutos3"></p>
         </div>
-        <div class="carrinho">
-            <p id="numeros4"></p> 
-            <p> Alion Vega Sicilia 2013</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho4">
+            <button onclick="adicionar4()">Adicionar</button>
+            <p>Alion Vega Sicilia 2013        R$</p>
+            <p id="valorProdutos4"></p>
         </div>
-        <div class="carrinho">
-            <p id="numeros5"></p> 
-            <p> Ca Bolani Prosecco</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho5">
+            <button onclick="adicionar5()">Adicionar</button>
+            <p>Ca Bolani Prosecco          R$</p>
+            <p id="valorProdutos5"></p>
         </div>
-        <div class="carrinho">
-            <p id="numList6"></p> 
-            <p> Champagne Dom Perignon Vintage</p>
-            <p id=""></p>
+        <div class="carrinho" id="carrinho">
+            <input type="number" id="vinho6">
+            <button onclick="adicionar6()">Adicionar</button>
+            <p>Champagne Dom Perignon Vintage  R$</p>
+            <p id="valorProdutos6"></p>
         </div>
-            
-        <h3>Valor Total:<p id="valorTotal"></p></h3>
+        <h3 class="valor__total">Valor Total: R$<p id="valorTotal" class="valor">0</p>,00</h3>
     </main>
 
     <section class="footer">
@@ -101,28 +108,7 @@
         </div>
         <footer>Copyright © 2010-2024 Vinheria Agnello</footer>
     </section>
-    <script>
-        // Carrega a array do localStorage
-        var numeros = JSON.parse(localStorage.getItem('numeros')) || {};
-
-        // Seleciona o container onde os elementos serão exibidos
-        var container = document.getElementById('container');
-
-        // Verifica se a array numeros não é null antes de atualizar os elementos HTML com os números
-        if (numeros !== null) {
-            // Itera sobre as chaves e valores da array
-            Object.keys(numeros).forEach(function(key) {
-                // Cria um elemento para exibir o número
-                var numeroElement = document.createElement('p');
-                numeroElement.textContent = key + ': ' + numeros[key];
-
-                // Adiciona o elemento ao container
-                container.appendChild(numeroElement);
-            });
-        } else {
-            console.log("Nenhum número encontrado no localStorage.");
-        }
-    </script>
-    <script src="/Script/Script.js"></script>
+    <script src="../Script/Script.js"></script>
+    
 </body>
 </html>

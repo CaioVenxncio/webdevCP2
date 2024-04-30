@@ -11,6 +11,12 @@ html {
     font-family: "Montserrat", serif;
     margin: 0;
 }
+.indicacao{
+    color: #860f36;
+}
+.indicacao:hover {
+    color: black;
+}
 .container__compra {
     display: flex;
     padding: 1em;
