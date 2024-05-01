@@ -2,12 +2,69 @@
 .imagens{
     width: 20rem;
 }
+@keyframes um_efeito {
+  0% {
+    background-image: linear-gradient(#bd446d);
+    transform: scale(2, 1   );}
+  25% {
+      background-image: linear-gradient(#860f36);
+  }
+  50% {
+      background-image: linear-gradient(#bd446d);}
+  75% {
+      background-image: linear-gradient(#860f36);}
+  100% {
+      background-image: linear-gradient(#bd446d);}
+}
+.animacao {
+  background-image: linear-gradient(#860f36);
+  animation-name: um_efeito;
+  animation-iteration-count: infinite;
+  animation-duration: 3s;
+  animation-delay: 3s;
+}
 .lista-vinhos{
     display:flex;
     flex-wrap: wrap;
     padding-left: 0;
 }
-
+.carrinho__container {
+  margin: 1em 10em 1em 36em;
+}
+#vinho1, #vinho2, #vinho3, #vinho4, #vinho5, #vinho6 {
+  margin: 0 1em 0 1em;
+  width: 40px;
+  border: 2px solid #bd446d;
+  border-radius: 8px;
+  
+}
+#vinho1, #vinho2, #vinho3, #vinho4, #vinho5, #vinho6::placeholder {
+  text-align: center;
+}
+.botao__carrinho {
+  background-color:#bd446d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;    
+  text-align: center;
+  text-decoration: none;
+  font-style: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.valor__total {
+  display: flex;
+  align-items: center;
+  margin-top: 3em 0 0 0;
+}
 *,
 *::before,
 *::after {
@@ -78,6 +135,33 @@ html {
   text-decoration: none;
   font-style: "Montserrat", sans-serif;
   font-weight: bold;
+}
+.container__adicionar {
+  margin: 0 auto;
+  background-color:#bd446d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;    
+  text-align: center;
+  text-decoration: none;
+  font-style: "Montserrat", sans-serif;
+  font-weight: bold;
+}
+.container__adicionar:hover {
+  background-color: #860f36
+}
+.cupom {
+  border: 2px solid #bd446d;
+  border-radius: 8px;
 }
 .valor__total {
   display: flex;

@@ -34,47 +34,51 @@
         </nav>
     </header>
 
-    <main>
+    <main class="carrinho__container">
        <div id="produtos" class="produtos"></div>
 
         <h2>Carrinho</h2> 
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho1">
-            <button onclick="adicionar1()">Adicionar</button>
-            <p>Château D' Anglès Classique      R$</p>
+            <button onclick="adicionar1()" class="botao__carrinho">Adicionar</button>
+            <p>Château D' Anglès Classique</p>
             <p id="valorProdutos1"></p>
         </div>
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho2">
-            <button onclick="adicionar2()">Adicionar</button>
-            <p>Cloudy Bay Sauvignon Blanc      R$</p>
+            <button onclick="adicionar2()" class="botao__carrinho">Adicionar</button>
+            <p>Cloudy Bay Sauvignon Blan</p>
             <p id="valorProdutos2"></p>
         </div>
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho3">
-            <button onclick="adicionar3()">Adicionar</button>
-            <p>Mazzeo Chianti 2019             R$</p>
+            <button onclick="adicionar3()" class="botao__carrinho">Adicionar</button>
+            <p>Mazzeo Chianti 2019 </p>
             <p id="valorProdutos3"></p>
         </div>
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho4">
-            <button onclick="adicionar4()">Adicionar</button>
-            <p>Alion Vega Sicilia 2013        R$</p>
+            <button onclick="adicionar4()" class="botao__carrinho">Adicionar</button>
+            <p>Alion Vega Sicilia 2013 </p>
             <p id="valorProdutos4"></p>
         </div>
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho5">
-            <button onclick="adicionar5()">Adicionar</button>
-            <p>Ca Bolani Prosecco          R$</p>
+            <button onclick="adicionar5()" class="botao__carrinho">Adicionar</button>
+            <p>Ca Bolani Prosecco </p>
             <p id="valorProdutos5"></p>
         </div>
         <div class="carrinho" id="carrinho">
             <input type="number" id="vinho6">
-            <button onclick="adicionar6()">Adicionar</button>
-            <p>Champagne Dom Perignon Vintage  R$</p>
+            <button onclick="adicionar6()" class="botao__carrinho">Adicionar</button>
+            <p>Champagne Dom Perignon Vintage</p>
             <p id="valorProdutos6"></p>
         </div>
-        <h3 class="valor__total">Valor Total: R$<p id="valorTotal" class="valor">0</p>,00</h3>
+        <h3 class="valor__total">Valor Total: <p id="valorTotal" class="valor__total"></p></h3>
+        <div class="container__cupom">
+            <input type="text" placeholder="Digite seu cupom" id="cupom" class="cupom">
+            <button class="container__adicionar" onclick="cupom()">Teste seu cupom</button>
+        </div>
     </main>
 
     <section class="footer">
