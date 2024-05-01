@@ -518,3 +518,8 @@ a:hover {
 .modal-content {
   text-align: center;
 }
+
+.alinhador {
+  margin: 0 auto;
+  padding: 0 200px;
+}
