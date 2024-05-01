@@ -514,3 +514,7 @@ a:hover {
   padding: 1rem;
   color: #860f36;
 }
+
+.modal-content {
+  text-align: center;
+}

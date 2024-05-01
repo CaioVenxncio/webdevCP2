@@ -143,6 +143,8 @@ function cadastro() {
     var senha2Cadastro = document.getElementById('senha2').value;
     if (nomeCadastro === '' || emailCadastro ===  '' || senhaCadastro === ''|| senha2Cadastro ==='') {
         alert('Cadastro Inválido\nEspaço(s) vazios');
+    } else if (senhaCadastro !== senha2Cadastro){
+        alert('Cadastro Inválido\nConfirme a senha corretamente!');
     } else {
         alert('Cadastro realizado com sucesso!');
 
