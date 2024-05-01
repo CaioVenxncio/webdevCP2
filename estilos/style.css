@@ -94,7 +94,6 @@ img {
   padding: 0.5rem;
 }
 
-
 nav {
   display: flex;
   justify-content: space-between;
@@ -212,8 +211,7 @@ article {
 
 .inicio-sobre{
   display: flex;
-    text-align: center;
-    align-items: center;
+  text-align: center;
 }
 .inicio-sobre h1{
   font-size: 60px;
@@ -229,8 +227,8 @@ width: 600px;
 
 }
 .sobre-vinhos{
-  padding-top: 5%;
-  margin: 0.5em
+  padding: 5% rem;
+  margin: 0.5em 5rem;
 }
 
 .sobre-vinhos img {
@@ -247,7 +245,7 @@ width: 600px;
 }
 
 .sobre-vinhos-2{
-  margin: 1rem;
+  margin: 0.5rem 5rem;
   text-align: center;
   justify-content: center;
   
@@ -399,4 +397,36 @@ a {
 }
 a:hover {
   color: #bd446d;
+}
+
+.indicacao{
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.botaoIndicacao {
+  margin: 0 auto;
+  background-color:#bd446d;
+  border-radius: 8px;
+  border-style: none;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  cursor: pointer;
+  display: inline-block;
+  font-weight: 500;
+  height: 40px;
+  line-height: 20px;
+  list-style: none;
+  outline: none;
+  padding: 10px 16px;    
+  text-align: center;
+  text-decoration: none;
+  font-style: "Montserrat", sans-serif;
+  font-weight: bold
+}
+
+.titulo{
+  text-align: center;
+  padding: 1rem;
+  color: #860f36;
 }

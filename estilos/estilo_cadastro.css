@@ -64,19 +64,27 @@ nav a:hover {
     text-align: center;
     margin-top: 8%;
     align-items: center;
+    margin-bottom: 50px;
 }
 
-.form-cadastro form {
+.cadastro {
+    margin: 0 auto;
     padding: 2rem;
     background-color: antiquewhite;
     box-shadow: 0 0 30px lightgray;
     border-radius: 10px;
-    width: 350px;
-    height: 400px;
-    margin-left: 38%;
-    margin-bottom: 10%;
-    
+    max-width: 350px;
 }
+
+.cadastroLogin {
+    margin: 0 auto;
+    padding: 2rem;
+    background-color: antiquewhite;
+    box-shadow: 0 0 30px lightgray;
+    border-radius: 10px;
+    max-width: 300px;
+}
+
 .texto{
     padding: 5px 12px;
     font-size: 14px;
@@ -158,40 +166,73 @@ footer a {
 }
 
 
-  .contact-details {
-    margin-top: 20px;
-  }
-  
-  .contact-details li {
-    list-style: none;
-    margin: 10px 0;
-  }
-  
-  .contact-details li a {
-    text-decoration:none;
-    color: #f1f1f1;
-  }
-  
-  .contact-details .fa {
-    color: #f1f1f1;
-    margin-right: 10px;
-  }
+.contact-details {
+  margin-top: 20px;
+}
 
-  .contact-details {
-    margin-top: 20px;
-  }
-  
-  .contact-details li {
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li a {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+.contact-details {
+  margin-top: 20px;
+}
+
+.contact-details li {
+  list-style: none;
+  margin: 10px 0;
+}
+
+.contact-details li {
+  text-decoration:none;
+  color: #f1f1f1;
+}
+
+.contact-details .fa {
+  color: #f1f1f1;
+  margin-right: 10px;
+}
+
+.titulo{
+    text-align: center;
+    padding: 1rem;
+    color: #860f36;
+}
+
+.botaoIndicacao {
+    margin: 0 auto;
+    background-color:#bd446d;
+    border-radius: 8px;
+    border-style: none;
+    box-sizing: border-box;
+    color: #FFFFFF;
+    cursor: pointer;
+    display: inline-block;
+    font-weight: 500;
+    height: 40px;
+    line-height: 20px;
     list-style: none;
-    margin: 10px 0;
-  }
-  
-  .contact-details li {
-    text-decoration:none;
-    color: #f1f1f1;
-  }
-  
-  .contact-details .fa {
-    color: #f1f1f1;
-    margin-right: 10px;
-  }
+    outline: none;
+    padding: 10px 16px;    
+    text-align: center;
+    text-decoration: none;
+    font-style: "Montserrat", sans-serif;
+    font-weight: bold
+}
+
+.centralizar {
+    text-align: center;
+    margin-bottom: 20px;
+    margin-top: 20px;
+    justify-content: center;
+}

@@ -5,10 +5,10 @@
 function cupom() {
     var cupom = document.getElementById('cupom').value;
     if (cupom === 'FIAP2024') {
-        alert('Cupom Valido!\nVocê conseguiu 10% de desconto!');
-    } else {
-        alert('Cupom Invalido!');
-    }
+        alert('Cupom Válido!\nVocê conseguiu 10% de desconto!');
+    } else if (cupom !== 'FIAP2024' && cupom !== ''){
+        alert('Cupom Inválido!\nTente outro!');
+    } else {alert('Por favor, insira um cupom!');}
 };
 
 
@@ -21,8 +21,8 @@ function formulario() {
         alert('Espaços Vazios\nDigite seu nome, mensagem e email!')
     } else {
         alert('Mensagem enviada com sucesso!')
-
-    
+        
+        
     }
 };
 let login = '1234';
@@ -40,7 +40,7 @@ function entrar() {
         alert('Login não foi realizado!')
         entrarEmail.innerHTML = '';
         entrarEmail.innerHTML = '';
-    
+        
     }
 };
 var resultado1 = document.getElementById('valorProdutos1');
@@ -90,5 +90,8 @@ function adicionar6() {
 }
 
 function adicionarCarrinho() {
-    alert('Vinho adicionado ao carrinho!');
+    var quantidade = parseInt(document.getElementById('numeroInput').value);
+    if (quantidade !== '' && quantidade > 0) {
+        alert('Quantidade adicionada ao carrinho!');
+    } else {alert('Adicione ao menos 1 unidade!');}
 }
